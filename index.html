@@ -22,6 +22,9 @@
         <form action="http://snowfaas.azurewebsites.net/api/Function1" method="get">
             <fieldset>
                 <legend>Give me your name</legend>
+                <br>First name: <br>
+                <input type="text" name="name" id="Firstname">
+                <br>
                 <br>Last name: <br>
                 <input type="text" name="name" id="name">
                 <br>
@@ -35,6 +38,11 @@
             </fieldset>
         </form>
 
+        <form action="http://snowfaas.azurewebsites.net/api/Function1" method="get">
+            <fieldset>
+                <textarea name="output" id="output" rows="10" cols="30">
+            </fieldset>
+        </form>
 
         <a href="https://mwkfaas.azurewebsites.net/api/HttpTrigger1?code=XXBaU2aKCj0258KQ3rC4AeEXCuB5GBkEfKeJD7t/hnuCGzUzxaw6Zg==&name=var=name"
             target="_top">click me to have the computer tell you hello</a>
