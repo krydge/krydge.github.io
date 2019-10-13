@@ -12,43 +12,43 @@
 </head>
 
 <body>
-    <header>
-
-    </header>
-    <main>
-        <h1>
-            Enter your name:
-        </h1>
-        <form action="http://snowfaas.azurewebsites.net/api/Function1" method="get">
-            <fieldset>
-                <legend>Give me your name</legend>
-                <br>First name: <br>
-                <input type="text" name="name" id="Firstname">
-                <br>
-                <br>Last name: <br>
-                <input type="text" name="name" id="name">
-                <br>
-                <input type="submit" value="Submit">
-            </fieldset>
-        </form>
-
-        <form action="http://snowfaas.azurewebsites.net/api/Function1" method="get">
-            <fieldset>
-                <input type="submit" value="Submit to Database">
-            </fieldset>
-        </form>
-
-        <form action="http://snowfaas.azurewebsites.net/api/Function1" method="get">
-            <fieldset>
-                <textarea name="output" id="output" rows="10" cols="30">
-                </textarea>
-            </fieldset>
-        </form>
-
-    </main>
-    <footer>
-
-    </footer>
+        <header>
+        </header>
+        <main>
+            <h1>
+                Enter your name:
+            </h1>
+            <form action="https://mwkfaas.azurewebsites.net/api/InsertDB" method="get">
+                <fieldset>
+                    <legend>Give me your name I will insert it into the database</legend>
+                    <br>First name: <br>
+                    <input type="text" name="name" id="Firstname">
+                    <br>
+                    <br>Last name: <br>
+                    <input type="text" name="lastname" id="Lastname">
+                    <br>
+                    <input type="submit" value="Insert into Database">
+                </fieldset>
+            </form>
+            <form action="https://mwkfaas.azurewebsites.net/api/ReadDB" method="get">
+                <fieldset>
+                    <input type="submit" value="Read from Database">
+                </fieldset>
+            </form>
+            <form action="https://mwkfaas.azurewebsites.net/api/Print2Screen" method="get">
+                <fieldset>
+                    <br>First name: <br>
+                    <input type="text" name="name" id="name" />
+                    <br>Last name: <br>
+                    <input type="text" name="lastname" id="Lastname" />
+                    <br />
+                    <input type="submit" value="Receive a greeting from the computer" />
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            ©2019 Kaydon Stubbs, Wednesday Woodbury, Marcelo Zometa.
+        </footer>
 </body>
 
 
